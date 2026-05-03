@@ -6,16 +6,17 @@ public class Book {
 
     private String bookName;
 
-    private String BookAuthor;
+    private String bookAuthor;
 
 
     private Boolean bookAvailable =true;
 
 
-    public Book(int id, String name, String author, Boolean available) {
+    public Book(int id, String name, String author) {
        this.bookId = id;
        this.bookName = name;
-       this.BookAuthor = author;
+       this.bookAuthor = author;
+       this.bookAvailable = true;
     }
 
     public Boolean getBookAvailable() {
@@ -34,7 +35,7 @@ public class Book {
 
 
     public String getBookAuthor() {
-        return BookAuthor;
+        return bookAuthor;
     }
 
 
@@ -50,7 +51,7 @@ public class Book {
 
     public void displayBook()
     {
-        System.out.println("Id: "+ bookId +"\nBook Name: "+this.bookName +"\nBook Author: "+this.BookAuthor+"\nBook Available: "+this.bookAvailable);
+        System.out.println("Id: "+ bookId +"\nBook Name: "+this.bookName +"\nBook Author: "+this.bookAuthor +"\nBook Available: "+this.bookAvailable);
     }
 
 
